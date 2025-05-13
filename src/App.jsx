@@ -16,6 +16,7 @@ import Peymentpage from './pages/peymentpage'
 import CourseCreator from './pages/CourseCreator'
 import ChatBot from './pages/ChatBot'
 import { Student_Certificates } from './components/StudentCertificates'
+import EditProfile from './pages/EditProfile'
 // import ExCourseVideo from './pages/ExCourseVideo'
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
           <Route path ='/peymentpage' element={<UserLayout><Peymentpage/></UserLayout>}></Route>
           <Route path ='/admin2' element={<UserLayout><CourseCreator/></UserLayout>}></Route>
           <Route path ='/Certificates' element={<UserLayout><Student_Certificates/></UserLayout>}></Route>
+          <Route path ='/edit' element={<UserLayout><EditProfile/></UserLayout>}></Route>
 
         </Routes>
         <ChatBot/>
